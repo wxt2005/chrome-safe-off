@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Google Safe Search Off",
+    "version": "0.1",
+    "description": "A extension for completely turning Google Safe Search off.",
+    "author": "JamesW",
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+
+    "page_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "Safe Off"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs"
+    ]
+}
